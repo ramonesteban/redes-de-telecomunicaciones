@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+    <title>Map Coverage WiFi</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        height: 100%;
+      }
+    </style>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript">
+      var m;
+      function init() {
+        m = new google.maps.Map(document.getElementById("map"));
+        var x = 25.763411
+        var y = -100.274198
+        var pos = new google.maps.LatLng(x, y);
+        m.setZoom(20);
+        m.setMapTypeId(google.maps.MapTypeId.HYBRID);
+        m.setCenter(pos);
+
+        var conf1 = {
+          strokeColor: "#FACC2E",
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: "#FACC2E",
+          fillOpacity: 0.4,
+          map: m,
+          center: new google.maps.LatLng(25.763411, -100.274198),
+          radius: 12
+        };
+        c1 = new google.maps.Circle(conf1);
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(25.763411, -100.274198),
+          map: m, title: "LISZTOMANIA"
+        });
+
+        var conf2 = {
+          strokeColor: "#336699",
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: "#336699",
+          fillOpacity: 0.4,
+          map: m,
+          center: new google.maps.LatLng(25.763275,-100.274302),
+          radius: 14
+        };
+        c2 = new google.maps.Circle(conf2);
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(25.763275,-100.274302),
+          map: m, title: "AXTEL-C9C2"
+        });
+
+        var conf3 = {
+          strokeColor: "#5FB404",
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: "#5FB404",
+          fillOpacity: 0.4,
+          map: m,
+          center: new google.maps.LatLng(25.763391,-100.274161),
+          radius: 13
+        };
+        c3 = new google.maps.Circle(conf3);
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(25.763391,-100.274161),
+          map: m, title: "INFINITUM0A0E"
+        });
+
+        var conf4 = {
+          strokeColor: "#0174DF",
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: "#0174DF",
+          fillOpacity: 0.4,
+          map: m,
+          center: new google.maps.LatLng(25.763535,-100.274139),
+          radius: 13
+        };
+        c4 = new google.maps.Circle(conf4);
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(25.763535,-100.274139),
+          map: m, title: "INFINITUM9F0D"
+        });
+
+        var conf5 = {
+          strokeColor: "#A901DB",
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: "#A901DB",
+          fillOpacity: 0.4,
+          map: m,
+          center: new google.maps.LatLng(25.763543,-100.274204),
+          radius: 12
+        };
+        c5 = new google.maps.Circle(conf5);
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(25.763543,-100.274204),
+          map: m, title: "AXTEL-3926"
+        });
+
+        var conf6 = {
+          strokeColor: "#FF8000",
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: "#FF8000",
+          fillOpacity: 0.4,
+          map: m,
+          center: new google.maps.LatLng(25.763528,-100.274081),
+          radius: 12
+        };
+        c6 = new google.maps.Circle(conf6);
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(25.763528,-100.274081),
+          map: m, title: "INFINITUM8C0E"
+        });
+      }
+    </script>
+</head>
+<body onload="init()">
+    <div id="map"></div>
+</body>
+</html>
